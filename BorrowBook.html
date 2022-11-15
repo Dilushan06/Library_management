@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<title>Register Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+
+    <div class="box">
+
+        <h1>Borrow Book</h1>
+
+        <form name="myform2" action="BorrowBook.php" method="POST">
+
+            <p>Borrow ID</p>
+            <input type="text" name="BorrowID" placeholder="Enter ReturnID" required="">
+            
+            <p>Student ID</p>
+            <input type="text" name="StudentID" placeholder="Enter Student ID" required="">
+
+            <p>Book ID</p>
+            <input type="text" name="BookID" placeholder="Enter your Book ID" required="">
+
+            <p>Title</p>
+            <input type="text" name="Title" placeholder="Enter Booh Title" required="">
+
+            <p>Borrow Date</p>
+            <input type="date" name="BorrowDate" placeholder="Enter The Date" value="<?php echo $BorrowDate; ?>" required="">
+
+
+            <input type="submit" name="" value="Register">
+            <input type="reset" name="" value="Reset">
+
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>
