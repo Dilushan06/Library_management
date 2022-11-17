@@ -5,7 +5,7 @@
 	mysqli_select_db($con, 'library_database');
 	//SELECT QUERY
     $sql = "INSERT INTO return_book(rtn_id,std_id,book_id,book_title,rtn_date)
-     Values('$_POST[BorrowID]','$_POST[StudentID]','$_POST[BookID]','$_POST[BookTitle]','$_POST[BorrowDate]')";
+     Values('$_POST[BorrowID]','$_POST[StudentID]','$_POST[BookID]','$_POST[BookTitle]',now())";
     //Execute the query
     if(mysqli_query($con,$sql))
     	header("refresh:1; url=BorrowBookReturn.php");
